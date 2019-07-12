@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="succes-banner">Your Account Created Successfully</div>
+  <div class="wrapper">
+    <form class="form" id="formRegistration" action="http://prozorro.test/api/register/" method="post">
+      <div class="form__title">Create your account</div>
+      <div class="form__field">
+        <input class="form__input" type="text" id="first_name" name="name" required="required"
+          placeholder="First Name" />
+        <label class="form__label" for="name">Name</label>
+      </div>
+      <div class="form__field">
+        <input class="form__input" type="text" id="surname" name="surname" required="required" placeholder="Surname" />
+        <label class="form__label" for="surname">Surname</label>
+      </div>
+      <div class="form__field">
+        <input class="form__input" type="text" id="name_customer" name="name_customer" required="required" placeholder="Customer Name"/>
+        <label class="form__label" for="name_customer">Customer Name</label>
+      </div>
+      <div class="form__field">
+        <input class="form__input" type="email" id="email" name="email" placeholder="Email" required="required"/>
+        <label class="form__label" for="email">Email</label>
+      </div>
+      <div class="form__field">
+        <input class="form__input" type="tel" id="phone" name="phone" placeholder="Phone" required="required" minlength="11"/>
+        <label class="form__label" for="phone" >Phone</label>
+      </div>
+      <div class="form__field">
+        <input class="form__input" type="number" id="role" name="role" placeholder="Role" pattern="[1-2]" maxlength="1" />
+        <label class="form__label" for="role">Role</label>
+      </div>
+      <div class="form__field">
+        <input class="form__input" type="password" id="password" name="password" required="required" placeholder="Password" minlength="6"/>
+        <label class="form__label" for="password">Password</label>
+      </div>
+      <div class="form__field">
+        <input class="form__input" type="password" id="password_confirmation" name="password_confirmation" required="required" placeholder="Password" minlength="6"/>
+        <label class="form__label" for="password_confirmation">Password</label>
+      </div>
+      <div class="form-field">
+        <button class="form__submit" type="submit">Sign Up</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="registration.js"></script>
+</body>
+
+</html>

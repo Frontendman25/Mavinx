@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <div class="menu-left">
+                <div class="menu-left__logo">Exprts</div>
+                <div class="menu-right__vertical-line"></div>
+                <img src="img/search.svg" alt="">
+                <div class="menu-left__search-wrap">
+                    <input class="menu-left__search" type="search" placeholder="Поиск экспертов, навыки">
+                </div>
+            </div>
+            <div class="menu-right">
+                <a class="menu-right__link" href="#">Эксперты</a>
+                <a class="menu-right__link" href="#">Вопросы</a>
+                <a class="menu-right__link" href="#">О нас</a>
+                <div class="menu-right__vertical-line"></div>
+                <a class="menu-right__link" href="#">Создать проект</a>
+                <div class="menu-right__vertical-line"></div>
+                <div class="btn-group">
+                    <div class="menu-right__user dropdown-toggle" data-toggle="dropdown"></div>
+                    <ul class="dropdown-menu" data-toggle="offcanvas-dropdown" role="menu">
+                        <li><a href="./account.html">Личный кабинет</a></li>
+                        <li><a class="menu-rigt__exit" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main class="main">
+            <div class="interaction-wrap">
+                <div class="interaciton interaciton_filters">
+                    <h2 class="interaciton__caption">Фильтры</h2>
+                    <span class="interaciton__clean">Очистить</span>
+                </div>
+                <div class="interaciton interaciton_categories">
+                    <h2 class="interaciton__caption">Категории (4)</h2>
+                    <div class="interaction__select-wrap">
+                        <select name="select">
+                            <option value="value1" selected disabled>Название</option>
+                            <option value="value2">Значение 1</option>
+                            <option value="value2">Значение 2</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                        <div id="thing" class="interacton__plus plus-cancel"></div>
+                    </div>
+                    <div class="interaction__links">
+                        <a href="#" class="interaciton__link">#Логотип</a>
+                        <a href="#" class="interaciton__link">#Landing-page</a>
+                        <a href="#" class="interaciton__link">Промо-сайт</a>
+                        <a href="#" class="interaciton__link">
+                            <div id="thing" class="interaciton__link_cross plus-cancel"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="interaction">
+                    <h2 class="interaciton__caption">Стоимость</h2>
+                    <div class="interaction__cost-wrap">
+                        <div class="interaction__cost">
+                            <select class="interaction_cost-select" name="select">
+                                <option value="value1" selected disabled>USD</option>
+                                <option value="value2">Значение 1</option>
+                                <option value="value2">Значение 2</option>
+                                <option value="value3">Значение 3</option>
+                            </select>
+                            <div class="interaction__price-wrap">
+                                <input class="interaction__price" type="text" placeholder="От">
+                                <input class="interaction__price" type="text" placeholder="До">
+                            </div>
+                        </div>
+                        <div id="slider-range"></div>
+                    </div>
+                    <!-- <p>
+                        <label for="amount">Price range:</label>
+                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </p> -->
+
+                </div>
+            </div>
+
+            <div class="content">
+                <h2 class="searched">Найдено <span class="services-count">(192 Услуги)</span></h2>
+                <div class="services">
+                    <div class="service">
+                        <div class="service__info">
+                            <h2 class="service__caption">Дизайн сайта UI и UX</h2>
+                            <p class="service__text">Рекламные компании говорят, что реклама необходима и важдна. Он
+                                инфорирует людей о новых продуктахю Рекламные циеты на улице делают нашу среду яркой.
+                            </p>
+                            <div class="service__links">
+                                <a href="#" class="service__link">#Landing-page</a>
+                                <a href="#" class="service__link">#Логотип</a>
+                                <a href="#" class="service__link">#Промо-сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__prices">
+                        <p class="service__price">1 840$</p>
+                        <p class="service__period">1-2 месяца</p>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <div class="service__info">
+                            <h2 class="service__caption">Дизайн сайта UI и UX</h2>
+                            <p class="service__text">Рекламные компании говорят, что реклама необходима и важдна. Он
+                                инфорирует людей о новых продуктахю Рекламные циеты на улице делают нашу среду яркой.
+                            </p>
+                            <div class="service__links">
+                                <a href="#" class="service__link">#Landing-page</a>
+                                <a href="#" class="service__link">#Логотип</a>
+                                <a href="#" class="service__link">#Промо-сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__prices">
+                        <p class="service__price">1 840$</p>
+                        <p class="service__period">1-2 месяца</p>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <div class="service__info">
+                            <h2 class="service__caption">Дизайн сайта UI и UX</h2>
+                            <p class="service__text">Рекламные компании говорят, что реклама необходима и важдна. Он
+                                инфорирует людей о новых продуктахю Рекламные циеты на улице делают нашу среду яркой.
+                            </p>
+                            <div class="service__links">
+                                <a href="#" class="service__link">#Landing-page</a>
+                                <a href="#" class="service__link">#Логотип</a>
+                                <a href="#" class="service__link">#Промо-сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__prices">
+                        <p class="service__price">1 840$</p>
+                        <p class="service__period">1-2 месяца</p>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <div class="service__info">
+                            <h2 class="service__caption">Дизайн сайта UI и UX</h2>
+                            <p class="service__text">Рекламные компании говорят, что реклама необходима и важдна. Он
+                                инфорирует людей о новых продуктахю Рекламные циеты на улице делают нашу среду яркой.
+                            </p>
+                            <div class="service__links">
+                                <a href="#" class="service__link">#Landing-page</a>
+                                <a href="#" class="service__link">#Логотип</a>
+                                <a href="#" class="service__link">#Промо-сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__prices">
+                        <p class="service__price">1 840$</p>
+                        <p class="service__period">1-2 месяца</p>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <div class="service__info">
+                            <h2 class="service__caption">Дизайн сайта UI и UX</h2>
+                            <p class="service__text">Рекламные компании говорят, что реклама необходима и важдна. Он
+                                инфорирует людей о новых продуктахю Рекламные циеты на улице делают нашу среду яркой.
+                            </p>
+                            <div class="service__links">
+                                <a href="#" class="service__link">#Landing-page</a>
+                                <a href="#" class="service__link">#Логотип</a>
+                                <a href="#" class="service__link">#Промо-сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__prices">
+                        <p class="service__price">1 840$</p>
+                        <p class="service__period">1-2 месяца</p>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <div class="service__info">
+                            <h2 class="service__caption">Дизайн сайта UI и UX</h2>
+                            <p class="service__text">Рекламные компании говорят, что реклама необходима и важдна. Он
+                                инфорирует людей о новых продуктахю Рекламные циеты на улице делают нашу среду яркой.
+                            </p>
+                            <div class="service__links">
+                                <a href="#" class="service__link">#Landing-page</a>
+                                <a href="#" class="service__link">#Логотип</a>
+                                <a href="#" class="service__link">#Промо-сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__prices">
+                        <p class="service__price">1 840$</p>
+                        <p class="service__period">1-2 месяца</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
